@@ -745,7 +745,7 @@ class LW_Tiled_Gallery_Widget extends \Elementor\Widget_Base {
             $close_tag = '</a>';
         }
 
-        echo $open_tag;
+        echo wp_kses_post( $open_tag );
 
         echo '<img src="' . esc_url( $image['url'] ) . '"';
         echo ' width="'   . esc_attr( $image['width'] )  . '"';
@@ -757,7 +757,7 @@ class LW_Tiled_Gallery_Widget extends \Elementor\Widget_Base {
             echo ' style="' . esc_attr( $img_style ) . '"';
         }
         echo ' loading="lazy">';
-echo $close_tag;
+echo wp_kses_post( $close_tag );
         $title_text  = $this->get_overlay_text( $overlay_title, $image['id'] );
         $desc_text   = $this->get_overlay_text( $overlay_description, $image['id'] );
         $has_content = $title_text || $desc_text;
