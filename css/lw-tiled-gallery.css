@@ -1,0 +1,145 @@
+/* ============================================================
+   LW Tiled Gallery
+   ============================================================ */
+
+.lw-tiled-gallery {
+    width: 100%;
+    overflow: hidden;
+}
+
+.lw-tiled-row {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    margin-bottom: 4px;
+}
+
+.lw-tiled-row:last-child {
+    margin-bottom: 0;
+}
+
+.lw-tiled-group {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.lw-tiled-group + .lw-tiled-group {
+    margin-left: 4px;
+}
+
+.lw-tiled-item {
+    overflow: hidden;
+    flex: 1;
+    line-height: 0;
+    position: relative;
+}
+
+.lw-tiled-item + .lw-tiled-item {
+    margin-top: 4px;
+}
+
+.lw-tiled-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Zoom in on hover */
+.lw-gallery--zoom-in .lw-tiled-item:hover img {
+    transform: scale(1.05);
+}
+
+/* ============================================================
+   Overlay
+   ============================================================ */
+
+.lw-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    display: flex;
+}
+
+.lw-overlay--top    { align-items: flex-start; }
+.lw-overlay--middle { align-items: center; }
+.lw-overlay--bottom { align-items: flex-end; }
+
+.lw-overlay-content {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.lw-overlay-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.lw-overlay-description {
+    font-size: 0.8rem;
+    margin-top: 0.25em;
+    line-height: 1.3;
+}
+
+/* Fade in */
+.lw-overlay--fade {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.lw-tiled-item:hover .lw-overlay--fade {
+    opacity: 1;
+}
+
+/* Slide up */
+.lw-overlay--slide_up {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.lw-tiled-item:hover .lw-overlay--slide_up {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* No animation */
+.lw-overlay--none {
+    opacity: 0;
+}
+
+.lw-tiled-item:hover .lw-overlay--none {
+    opacity: 1;
+}
+
+/* Touch devices */
+@media (hover: none) {
+    .lw-overlay {
+        display: none;
+    }
+}
+
+/* ============================================================
+   Mobile: single column stack
+   ============================================================ */
+
+.lw-tiled-gallery.is-stacked .lw-tiled-row {
+    flex-wrap: wrap;
+}
+
+.lw-tiled-gallery.is-stacked .lw-tiled-group {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-bottom: 4px;
+}
+
+.lw-tiled-gallery.is-stacked .lw-tiled-group:last-child {
+    margin-bottom: 0;
+}
+
+.lw-tiled-gallery.is-stacked .lw-tiled-item img {
+    height: auto;
+}
