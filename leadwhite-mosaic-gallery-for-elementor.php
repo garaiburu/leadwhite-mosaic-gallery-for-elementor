@@ -1,14 +1,14 @@
 <?php
 /**
- * Plugin Name: LW Tiled Gallery
- * Plugin URI:  https://github.com/leadwhite/lw-tiled-gallery
+ * Plugin Name: Leadwhite Mosaic Gallery for Elementor
+ * Plugin URI:  https://github.com/leadwhite/leadwhite-mosaic-gallery-for-elementor
  * Description: A tiled mosaic gallery widget for Elementor. Replicates the layout algorithm of Jetpack's Tiled Mosaic gallery — aspect-ratio-driven rows with varied shapes — as a native Elementor widget with full style controls.
  * Version:     1.0.0
  * Author:      John Clark
  * Author URI:  https://leadwhite.co.uk
  * License:     GPL-2.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: lw-tiled-gallery
+ * Text Domain: leadwhite-mosaic-gallery-for-elementor
  * Requires at least: 6.0
  * Requires PHP: 7.4
  */
@@ -74,6 +74,6 @@ function lw_tiled_gallery_enqueue_assets() {
  */
 function lw_tiled_gallery_missing_elementor_notice() {
     echo '<div class="notice notice-error"><p>';
-    echo '<strong>LW Tiled Gallery</strong> requires Elementor to be installed and active.';
+    echo '<strong>Leadwhite Mosaic Gallery for Elementor</strong> requires Elementor to be installed and active.';
     echo '</p></div>';
 }
