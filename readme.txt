@@ -1,5 +1,5 @@
-=== LW Tiled Gallery ===
-Contributors: johnclark
+=== Leadwhite Mosaic Gallery for Elementor ===
+Contributors: garaiburu
 Tags: gallery, elementor, tiled, mosaic, images
 Requires at least: 6.0
 Tested up to: 6.9
@@ -12,7 +12,7 @@ A tiled mosaic gallery widget for Elementor with aspect-ratio-driven layout, ful
 
 == Description ==
 
-LW Tiled Gallery adds a Tiled Gallery widget to Elementor that produces a varied mosaic layout driven by image aspect ratios — similar to Jetpack's Tiled Mosaic gallery but built natively for Elementor with full style controls.
+Leadwhite Mosaic Gallery for Elementor adds a Tiled Gallery widget to Elementor that produces a varied mosaic layout driven by image aspect ratios — similar to Jetpack's Tiled Mosaic gallery but built natively for Elementor with full style controls.
 
 **How it works**
 
@@ -43,7 +43,7 @@ Row heights and column widths are calculated from aspect ratios so all images in
 
 == Installation ==
 
-1. Upload the `lw-tiled-gallery` folder to `/wp-content/plugins/`
+1. Upload the `Leadwhite-Mosaic-Gallery-for-Elementor` folder to `/wp-content/plugins/`
 2. Activate the plugin through the Plugins menu in WordPress
 3. The Tiled Gallery widget will appear in the Elementor widget panel under General
 
@@ -73,7 +73,8 @@ No. The layout algorithm is an independent port of Jetpack's open-source grouper
 
 = Does this require Elementor Pro? =
 
-Yes. The widget uses Elementor Pro's Loop Grid and Theme Builder infrastructure. Elementor Pro must be active.
+Yes. The widget uses Elementor Pro controls for typography styling. 
+Elementor Pro must be active.
 
 = Where does the overlay text come from? =
 
