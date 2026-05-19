@@ -71,10 +71,14 @@ Row heights and column widths are calculated from aspect ratios so all images in
 
 No. The layout algorithm is an independent port of Jetpack's open-source grouper logic. Jetpack is not required.
 
-= Does this require Elementor Pro? =
+= Does this requite Elementor?
 
-Yes. The widget uses Elementor Pro controls for typography styling. 
-Elementor Pro must be active.
+Yes.The widget uses Elementor controls for typography styling. 
+Elementor must be active.
+
+= Does this require Elementor Pro? 
+
+No
 
 = Where does the overlay text come from? =
 
