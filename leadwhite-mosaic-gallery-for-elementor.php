@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Leadwhite Mosaic Gallery for Elementor
- * Plugin URI:  https://github.com/leadwhite/leadwhite-mosaic-gallery-for-elementor
+ * Plugin URI: https://github.com/garaiburu/leadwhite-mosaic-gallery-for-elementor
  * Description: A tiled mosaic gallery widget for Elementor. Replicates the layout algorithm of Jetpack's Tiled Mosaic gallery — aspect-ratio-driven rows with varied shapes — as a native Elementor widget with full style controls.
  * Version:     1.0.0
  * Author:      John Clark
@@ -11,6 +11,7 @@
  * Text Domain: leadwhite-mosaic-gallery-for-elementor
  * Requires at least: 6.0
  * Requires PHP: 7.4
+ * Requires Plugins: elementor
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
